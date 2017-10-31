@@ -113,24 +113,13 @@ let coche = {
   marca: 'Renault',
   tipo: 'deportivo',
   caracteristicas: {
-    cilindrada: '2200', 
+    cilindrada: '2200',
     motor: 'gasolina'
   }
 }
-  
+
 function contarPropiedades () {
-  let counter = 0;
-  
-  for (let key in coche) {
-		if (coche.hasOwnProperty(key)) {
-      if (typeof coche[key] === 'object') {
-      	counter += Object.keys(coche[key]).length;
-      }
-  		counter++; 	
-    }
-  }
-  
-  return counter;
+  return Object.keys(coche).length;
 }
 
 console.log(contarPropiedades());
