@@ -138,8 +138,8 @@ console.log(contarPropiedades());
 /*==================================================================|
 | Ejercicio 7.                                                      |
 |===================================================================|
-| Crear una función que cuente el número de enteros positivos que   |
-| hay en un array de números enteros. Partiremos del siguiente      |
+| Crear una funciÃ³n que cuente el nÃºmero de enteros positivos que   |
+| hay en un array de nÃºmeros enteros. Partiremos del siguiente      |
 | array:  let miArray = [1, 2, 3, -5, -6, 10];                      |
 |==================================================================*/
 
@@ -163,7 +163,7 @@ console.log(contarPositivos());
 |===================================================================|
 | A partir del siguiente array con elementos de diferentes tipos:   |
 |     miLista = [1, true, 2, 3, 'a', 'b']                           |
-| Crear una función "filterNumbers" que devuelva el valor de la suma|
+| Crear una funciÃ³n "filterNumbers" que devuelva el valor de la suma|
 | de sus numeros.                                                   |
 |==================================================================*/
 
