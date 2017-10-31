@@ -79,12 +79,18 @@ console.log(comparar(6, 8));
 |==================================================================*/
 
 function Contacto (nombre, apellido, telefono) {
+  this.nombre = nombre;
+  this.apellido = apellido;
+  this.telefono = telefono;
+}
 
+Contacto.prototype.getTelefono = function () {
+  return ("El telefono de " + this.nombre + " " + this.apellido + " es " + this.telefono);
 }
   
 let fer = new Contacto('Steve', 'Wozniak', 666335500);
   
-console.log( );
+console.log( fer.getTelefono() );
 
 
 /*==================================================================|
