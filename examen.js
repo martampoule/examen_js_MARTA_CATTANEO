@@ -6,7 +6,7 @@
 |==================================================================*/
 
 function concatenarStrings (a, b) {
-	return a + b;
+	return `${a} ${b}`;
 }
 
 console.log(concatenarStrings('Hello','world'));
@@ -19,7 +19,8 @@ console.log(concatenarStrings('Hello','world'));
 |==================================================================*/
 
 function notaMedia (num1, num2, num3) {
-
+  var totale = (num1 + num2 + num3)/3
+  return totale;
 }
   
 console.log(notaMedia(6, 10, 7));
@@ -44,6 +45,7 @@ let persona = {
 }
   
 function saludar () {
+  
 
 }
 
