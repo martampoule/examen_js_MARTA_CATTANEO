@@ -110,19 +110,30 @@ console.log( fer.getTelefono() );
 |==================================================================*/
 
 let coche = {
-    marca: 'Renault',
-    tipo: 'deportivo',
-    caracteristicas: {
-      cilindrada: '2200', 
-      motor: 'gasolina'
+  marca: 'Renault',
+  tipo: 'deportivo',
+  caracteristicas: {
+    cilindrada: '2200', 
+    motor: 'gasolina'
+  }
+}
+  
+function contarPropiedades () {
+  let counter = 0;
+  
+  for (let key in coche) {
+		if (coche.hasOwnProperty(key)) {
+      if (typeof coche[key] === 'object') {
+      	counter += Object.keys(coche[key]).length;
+      }
+  		counter++; 	
     }
   }
   
-  function contarPropiedades () {
-   
-  }
+  return counter;
+}
 
-  console.log(contarPropiedades());
+console.log(contarPropiedades());
 
 /*==================================================================|
 | Ejercicio 7.                                                      |
