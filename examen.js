@@ -146,7 +146,14 @@ console.log(contarPropiedades());
 let miArray = [1, 2, 3, -5, -6, 10];
 
 function contarPositivos () {
- 
+  let counter = 0;
+	
+  miArray.forEach(function (n, i) {
+    // 0 es positivo
+	  if (n >= 0)	counter++;	
+  });
+  
+  return counter;
 }
 
 console.log(contarPositivos());
@@ -162,3 +169,14 @@ console.log(contarPositivos());
 
 miLista = [1, true, 2, 3, 'a', 'b'];
 
+function filterNumbers (arr) {
+  let suma = 0;
+  
+	arr.forEach(function (n, i) {
+  	if (typeof n === 'number') suma += n;
+  });
+  
+  return suma;
+}
+
+console.log(filterNumbers(miLista));
